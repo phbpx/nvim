@@ -22,6 +22,13 @@ local mappings = {
         h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" }, -- Horizontal Terminal
         v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },     -- Vertical Terminal
     },
+
+    q = {
+        name = "Rest client",
+        r = { "<Plug>RestNvim", "Run the request under the cursor" },
+        p = { "<Plug>RestNvimPreview", "Preview the request cURL command" },
+        l = { "<Plug>RestNvimLast", "Re-run the last request" }
+    },
 }
 
 which_key.register(mappings, opts)
