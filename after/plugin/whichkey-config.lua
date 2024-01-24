@@ -13,7 +13,8 @@ local opts = {
 }
 
 local mappings = {
-    --Toggle Term
+    z = { "<cmd>Alpha<cr>", "Alpha" },
+
     t = {
         name = "Terminal",
         f = { "<cmd>ToggleTerm direction=float<cr>", "Float" }, -- Floating Terminal
